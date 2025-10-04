@@ -1,9 +1,10 @@
-/* styles.css — Inter font demo */
+/* styles.css — Personal site version */
 :root {
   --bg: #fbfbfb;
   --card: #ffffff;
   --muted: #6b7280;
   --accent: #0f172a;
+  --border: #e5e7eb;
 }
 
 * { box-sizing: border-box; }
@@ -22,7 +23,21 @@ html, body {
   padding: 24px;
 }
 
-/* Typographic scale */
+/* Header / intro section */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
 h1 {
   font-size: 40px;
   margin: 0 0 6px;
@@ -31,35 +46,35 @@ h1 {
 }
 
 .subtitle {
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   color: var(--muted);
   font-weight: 400;
 }
 
-h2 {
-  font-size: 26px;
-  margin-top: 24px;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 18px;
-  margin-top: 18px;
-  font-weight: 500;
-}
-
 p {
-  line-height: 1.5;
+  line-height: 1.6;
   color: #111827;
+  margin: 0 0 16px;
 }
 
-/* Simple card style */
-.card {
+/* Project grid */
+.projects {
+  margin-top: 48px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-top: 16px;
-  padding: 14px;
+}
+
+.card {
+  padding: 16px;
   background: var(--card);
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(15,23,42,0.06);
+  border: 1px solid var(--border);
 }
 
 .card-title {
@@ -73,8 +88,22 @@ p {
   font-size: 14px;
 }
 
+/* Contact section */
+.contact {
+  margin-top: 48px;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-  margin-top: 36px;
+  margin-top: 48px;
   color: var(--muted);
   font-size: 13px;
   text-align: center;
