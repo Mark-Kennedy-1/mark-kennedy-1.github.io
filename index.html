@@ -1,69 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mark Kennedy — Game Design Student</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name]</title>
 
-  <!-- Load Inter from Google Fonts -->
+  <!-- Load Inter font from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet"
+  />
 
-  <!-- Custom stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="intro">
-      <img src="https://placehold.co/120x120" alt="Profile photo placeholder" class="avatar" />
-      <div>
-        <h1>Mark Kennedy</h1>
-        <p class="subtitle">
-          Student at <strong>The Ohio State University</strong><br>
-          Studying <strong>Game Design</strong>
-        </p>
-        <p>
-          I’m fascinated by <strong>medieval history</strong>, strategy games, and meditation.
-        </p>
+  <div class="sidebar">
+    <h2>[Your Name]</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#fun">Fun Facts</a>
+      <a href="#news">In the News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <section id="about">
+      <h1>About Me</h1>
+      <div id="profile-pic-container">
+        <img src="profile.jpg" alt="[Your Name]" class="profile-pic">
       </div>
-    </header>
-
-    <section class="projects">
-      <h2>Portfolio Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <p class="card-title">⚔️ Project One</p>
-          <p class="card-body">
-            Placeholder for a turn-based medieval strategy prototype. Focused on minimalist design and atmosphere.
-          </p>
-        </div>
-
-        <div class="card">
-          <p class="card-title">🏰 Project Two</p>
-          <p class="card-body">
-            A peaceful building sim inspired by monastery life. Work in progress — exploring tone and pacing.
-          </p>
-        </div>
-
-        <div class="card">
-          <p class="card-title">🎮 Project Three</p>
-          <p class="card-body">
-            A smaller experimental game about balance, simplicity, and mindful play.
-          </p>
-        </div>
-      </div>
+      <p>
+        Hello! I’m <strong>[Your Name]</strong>, a [role or title] passionate about [your main interests]. 
+        I’m currently a [degree or position] at <strong style="color:#bb0000;">The Ohio State University</strong>. 
+        My work explores [short summary of focus areas].
+      </p>
+      <p>
+        I enjoy combining [field 1] and [field 2] to explore questions about [broad theme]. 
+        This site highlights my background, projects, and a few personal details.
+      </p>
     </section>
 
-    <section class="contact">
-      <h2>Get in Touch</h2>
-      <p>
-        You can reach me via email at 
-        <a href="#" class="link">markkennedy@example.com</a> (placeholder).  
-        Or find me on <a href="#" class="link">GitHub</a> and <a href="#" class="link">LinkedIn</a>.
+    <section id="education">
+      <h1>Education</h1>
+      <p><strong>[Degree]</strong> — [University], [Year]</p>
+      <p><strong>[Degree]</strong> — [University], [Year]</p>
+    </section>
+
+    <section id="research">
+      <h1>Research</h1>
+      <p>My research explores questions like:</p>
+      <ul>
+        <li>How can we use [method] to understand [phenomenon]?</li>
+        <li>What role does [factor] play in [context]?</li>
+        <li>How can data science support [social/scientific goal]?</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+
+      <article class="project">
+        <h2>Project Title 1</h2>
+        <p><em>[Institution], [Date Range]</em></p>
+        <ul>
+          <li>Short description of methods used</li>
+          <li>Optional: Presentation or publication info</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h2>Project Title 2</h2>
+        <p><em>[Institution], [Date Range]</em></p>
+        <ul>
+          <li>Key contribution or result</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="fun">
+      <h1>Fun Facts</h1>
+      <ul>
+        <li>🌍 I’ve traveled to [number] countries.</li>
+        <li>📚 I enjoy reading about [topic].</li>
+        <li>🎵 I play [instrument].</li>
+      </ul>
+    </section>
+
+    <section id="news">
+      <h1>In the News</h1>
+      <ul>
+        <li><a href="#">[Publication or Feature]</a></li>
+        <li><a href="#">[Article or Mention]</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>You can reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>Find me on:  
+        <a href="#">GitHub</a> | 
+        <a href="#">LinkedIn</a>
       </p>
     </section>
 
     <footer>
-      <small>© 2025 Mark Kennedy — Built with Inter on GitHub Pa
+      <p>&copy; 2025 [Your Name]</p>
+    </footer>
+  </div>
+</body>
+</html>
