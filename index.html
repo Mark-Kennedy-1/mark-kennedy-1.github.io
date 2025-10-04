@@ -41,6 +41,9 @@
         My work explores the intersection of game design and minimalism.
       </p>
       <p>
+      💡 **Total Game Design Time Logged:** <strong id="game-hours-counter">...</strong>
+      </p>
+      <p>
         I enjoy combining thoughtful design and simple forms to explore how games create meaningful experiences.
         This site highlights my background, projects, and a few personal details.
       </p>
@@ -108,5 +111,37 @@
       <p>&copy; 2025 Mark Kennedy</p>
     </footer>
   </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Paste the Web app URL you copied in Step 2 here
+    const dataUrl = 'PASTE_YOUR_WEB_APP_URL_HERE';
+
+    fetch(dataUrl)
+      .then(response => response.json())
+      .then(data => {
+        const hoursElement = document.getElementById('game-hours-counter');
+
+        const hours = data.hours;
+        const minutes = data.minutes;
+
+        // Build the display text, handling singular vs. plural
+        let displayText = `${hours.toLocaleString()} ${hours === 1 ? 'hour' : 'hours'}`;
+
+        // Only add minutes if they are greater than 0
+        if (minutes > 0) {
+          displayText += ` and ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
+        }
+
+        // Display the final text on the page
+        hoursElement.textContent = displayText;
+      })
+      .catch(error => {
+        console.error('Error fetching game hours:', error);
+        hoursElement.textContent = 'N/A';
+      });
+  });
+</script>
+  
 </body>
 </html>
