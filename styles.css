@@ -139,3 +139,14 @@ footer {
       margin-top: 48px; /* Restore original margin */
   }
 }
+
+/* Add this to your styles.css file */
+.project h2 a {
+  color: inherit; /* Makes the link the same color as other h2 elements */
+  text-decoration: none; /* Removes the default underline */
+}
+
+.project h2 a:hover {
+  color: #bb0000; /* Changes color on hover for feedback */
+  text-decoration: underline; /* Adds an underline on hover */
+}
